@@ -1,0 +1,75 @@
+/* Avenir Web */
+
+/* ----------------- */
+
+/* font-weight: ROMAN */
+@font-face {
+    font-family: 'Avenir Regular';
+    src: url('../webfonts/Avenir-Roman.eot') format('embedded-opentype'),
+    url('../webfonts/Avenir-Roman.otf')  format('opentype'),
+    url('../webfonts/Avenir-Roman.ttf') format('truetype'),
+    url('../webfonts/Avenir-Roman.woff') format('woff'),
+    url('../webfonts/Avenir-Roman.svg#Avenir-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-weight: MEDIUM */
+@font-face {
+    font-family: 'Avenir Medium';
+    src: url('../webfonts/Avenir-Medium.eot') format('embedded-opentype'),
+    url('../webfonts/Avenir-Medium.otf')  format('opentype'),
+    url('../webfonts/Avenir-Medium.ttf') format('truetype'),
+    url('../webfonts/Avenir-Medium.woff') format('woff'),
+    url('../webfonts/Avenir-Medium.svg#Avenir-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-weight: MEDIUM OBLIQUE */
+@font-face {
+    font-family: 'Avenir Medium Oblique';
+    src: url('../webfonts/Avenir-MediumOblique.eot') format('embedded-opentype'),
+    url('../webfonts/Avenir-MediumOblique.otf')  format('opentype'),
+    url('../webfonts/Avenir-MediumOblique.ttf') format('truetype'),
+    url('../webfonts/Avenir-MediumOblique.woff') format('woff'),
+    url('../webfonts/Avenir-MediumOblique.svg#Avenir-Medium-Oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-weight: HEAVY */
+@font-face {
+    font-family: 'Avenir Heavy';
+    src: url('../webfonts/Avenir-Heavy.eot') format('embedded-opentype'),
+    url('../webfonts/Avenir-Heavy.otf')  format('opentype'),
+    url('../webfonts/Avenir-Heavy.ttf') format('truetype'),
+    url('../webfonts/Avenir-Heavy.woff') format('woff'),
+    url('../webfonts/Avenir-Heavy.svg#Avenir-Heavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-weight: BLACK */
+@font-face {
+    font-family: 'Avenir Black';
+    src: url('../webfonts/Avenir-Black.eot') format('embedded-opentype'),
+    url('../webfonts/Avenir-Black.otf')  format('opentype'),
+    url('../webfonts/Avenir-Black.ttf') format('truetype'),
+    url('../webfonts/Avenir-Black.woff') format('woff'),
+    url('../webfonts/Avenir-Black.svg#Avenir-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-weight: LIGHT */
+@font-face {
+    font-family: 'Avenir Light';
+    src: url('../webfonts/Avenir-Light.eot') format('embedded-opentype'),
+    url('../webfonts/Avenir-Light.otf')  format('opentype'),
+    url('../webfonts/Avenir-Light.ttf') format('truetype'),
+    url('../webfonts/Avenir-Light.woff') format('woff'),
+    url('../webfonts/Avenir-Light.svg#Avenir-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
