@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    // Brands slider
+    // Agencies slider
     $('.agencies_slider').slick({
         dots: true,
         arrows: false,
@@ -22,7 +22,7 @@ $(document).ready(function(){
             {
                 breakpoint: 767,
                 settings: {
-                    dots: false,
+                    dots: true,
                     slidesToShow: 3,
                     slidesToScroll: 1
                 }
@@ -30,13 +30,21 @@ $(document).ready(function(){
             {
                 breakpoint: 600,
                 settings: {
+                    dots: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 495,
+                settings: {
                     dots: false,
                     slidesToShow: 2,
                     slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 360,
                 settings: {
                     dots: false,
                     slidesToShow: 1,
@@ -47,11 +55,17 @@ $(document).ready(function(){
     });
 
 
-
-    // Animating the standard hamburger-menu
-    $(".navbar-toggle").on("click", function () {
-        $(this).toggleClass("active");
+    // Hamburger menu animation
+    $('.hk_nav_toggler').on('click', function(){
+        $('.animated-icon1').toggleClass('open');
     });
+
+
+
+
+
+
+
 
 
 });
