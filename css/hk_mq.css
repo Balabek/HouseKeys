@@ -303,7 +303,11 @@
     li.opp_tab {margin-bottom: 4px;}
     ul.opp_tabs_list {top: -150px;}
     .opp_tabs_area {padding-top: 145px;}
-    .opp_button_holder {position: relative; bottom: 0;}
+    .opp_button_holder {position: relative; bottom: -50px;}
+    .tab-content.opp_tab_content {
+        position: relative; top: -55px;
+    }
+
 }
 
 @media screen and (max-width: 440px){
