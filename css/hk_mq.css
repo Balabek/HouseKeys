@@ -274,6 +274,49 @@
 
 
 
+/* ¬¬¬¬¬¬¬¬¬¬¬¬ HOUSING OPPORTUNITIES (INNER PAGE) ¬¬¬¬¬¬¬¬¬¬¬ */
+/* ==================== */
+/* Opp Tabs Box */
+/* ==================== */
+@media screen and (max-width: 1199px){
+    .opp_tabs_box {width: 90%;}
+}
+
+@media screen and (max-width: 767px){
+    .opp_tabs_box {width: 99%;}
+    .opp_tab {width: 100%;}
+    li.opp_tab a:last-child {border-radius: 10px !important;}
+    li.opp_tab {margin-bottom: 4px;}
+    ul.opp_tabs_list {top: -150px;}
+    .opp_tabs_area {padding-top: 145px;}
+    .opp_button_holder {position: relative; bottom: 0;}
+}
+
+@media screen and (max-width: 440px){
+    .opp_content_box {padding: 20px 10px 50px 10px;}
+}
+
+
+
+/* ==================== */
+/* Opp Cards */
+/* ==================== */
+@media screen and (max-width: 470px){
+    .price_holder h2 {font-size: 1.6rem; top: 8px;}
+}
+
+@media screen and (max-width: 380px){
+    h4.opp_card_address {font-size: 1.1rem;}
+    .program_data_holder a {font-size: 0.9rem;}
+    .inportant_details_title_holder h4 {font-size: 0.7rem;}
+    .info_ttl p {font-size: 0.7rem;}
+    .info_details p {font-size: 0.7rem;}
+    span.alert_icon {width: 20px; height: 20px;}
+    .alert_notification_holder small {font-size: 0.7rem;}
+}
+
+
+
 
 
 
