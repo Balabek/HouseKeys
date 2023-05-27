@@ -276,6 +276,20 @@
 
 /* ¬¬¬¬¬¬¬¬¬¬¬¬ HOUSING OPPORTUNITIES (INNER PAGE) ¬¬¬¬¬¬¬¬¬¬¬ */
 /* ==================== */
+/* Inner Header */
+/* ==================== */
+@media screen and (max-width: 525px){
+    .inner_header_title h1 {font-size: 3rem;}
+}
+
+@media screen and (max-width: 365px){
+    .inner_header_title h1 {font-size: 2.7rem;}
+}
+
+
+
+
+/* ==================== */
 /* Opp Tabs Box */
 /* ==================== */
 @media screen and (max-width: 1199px){
