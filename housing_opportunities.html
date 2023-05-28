@@ -52,7 +52,7 @@
 
 <div id="home" class="outermost_wrapper">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
     <div class="container">
       <a class="navbar-brand animate__animated animate__fadeIn" href="#"><img src="img/HK_Logo.svg" class="nav_logo" alt="HouseKeys logo"></a>
       <button class="navbar-toggler hk_nav_toggler" type="button" data-bs-toggle="collapse" data-bs-target="#houseKeysNavCollapse"
@@ -92,7 +92,7 @@
     </div>
   </nav> <!-- Navigation END -->
 
-  <div class="hk_header_area_inner" style="background: url('img/bgd_housing_opportunities.webp') center center no-repeat; background-size: cover;">
+  <div class="hk_header_area_inner" style="background: url('img/bgd_housing_opportunities.webp') center center no-repeat; background-size: cover;" role="banner">
     <div class="container">
       <div class="row justify-content-center">
         <div class="inner_header_title">
@@ -102,16 +102,16 @@
     </div>
   </div> <!-- Inner Header Area END -->
 
-  <div class="opp_tabs_area">
+  <div class="opp_tabs_area" role="tablist">
     <div class="container">
       <div class="row opp_tabs_outermost">
         <div class="opp_tabs_box_holder">
-          <div class="opp_tabs_box">
+          <div class="opp_tabs_box" role="tablist">
             <ul class="nav nav-pills opp_tabs_list" role="tablist">
-              <li class="opp_tab">
+              <li class="opp_tab" role="tab">
                 <a class="nav-link opp_link active" data-bs-toggle="pill" href="#allOpportunities">All Opportunities</a>
               </li>
-              <li class="opp_tab">
+              <li class="opp_tab" role="tab">
                 <a class="nav-link opp_link" data-bs-toggle="pill" href="#myOpportunityMatches">My Opportunity Matches</a>
               </li>
             </ul> <!-- Opp Tabs List END -->
@@ -128,7 +128,7 @@
                     <p>Learn how you can apply for affordable opportunities successfully</p>
                   </article>
                   <div class="opp_button_holder text-center">
-                    <button class="btn opp_button">Learn More</button>
+                    <button class="btn opp_button" role="button">Learn More</button>
                   </div>
                 </div>
               </div> <!-- All Opportunities Tab Content END -->
@@ -143,7 +143,7 @@
                     <p>Here is some alternative text placeholder</p>
                   </article>
                   <div class="opp_button_holder text-center">
-                    <button class="btn opp_button">See My Matches</button>
+                    <button class="btn opp_button" role="button">See My Matches</button>
                   </div>
                 </div>
               </div> <!-- My Matches Tab Content END -->
@@ -266,8 +266,8 @@
         <div class="col-lg-4 filter_input_holder">
           <div class="hk_form_group">
             <label for="houseKeysOpportunitySearch"></label>
-            <input class="form-control opp_search_input" type="search" id="houseKeysOpportunitySearch" placeholder="Search...">
-              <button class="searcher" type="button">
+            <input class="form-control opp_search_input" type="search" id="houseKeysOpportunitySearch" placeholder="Search..." role="searchbox">
+              <button class="searcher" type="button" role="button">
                   <i class="fa-solid fa-magnifying-glass"></i>
               </button>
           </div>
@@ -983,14 +983,14 @@
         </div> <!-- Opp Card Holder END -->
 
         <div class="load_more_button_holder text-center">
-          <button class="btn load_more_btn">Load More</button>
+          <button class="btn load_more_btn" role="button">Load More</button>
         </div>
 
       </div> <!-- Main Row END -->
     </div>
   </div> <!-- House Listing Main Area END -->
 
-  <footer class="hk_footer">
+  <footer class="hk_footer" role="contentinfo">
     <div class="container">
       <div class="row hk_footer_outermost">
         <div class="col-lg-3 f_links_holder">
