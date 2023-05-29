@@ -2,16 +2,7 @@
 
 
 /* General + Nav */
-@media screen and (max-width: 1199px){
-    img.nav_logo {width: 13rem;}
-    li.nav-item a {font-size: 1rem;}
-    li.nav-item {margin-right: 14px;}
-    li.nav-item:nth-child(5) {padding-right: 5px;}
-    button.nav_signin_btn {font-size: 1rem; width: 7rem;}
-    button.nav_getstarted_btn {font-size: 1rem; width: 9rem;}
-}
-
-@media screen and (max-width: 991px){
+@media screen and (max-width: 1399px){
     img.nav_logo {width: 15rem;}
     li.nav-item a {font-size: 1.2rem;}
     li.nav-item > a:after {bottom: 0;}
@@ -21,6 +12,15 @@
     button.nav_signin_btn {font-size: 1.2rem; width: 14rem; margin-bottom: 16px;}
     button.nav_getstarted_btn {font-size: 1.2rem; width: 14rem; margin-bottom: 16px;}
 }
+
+/*@media screen and (max-width: 1199px){*/
+/*    img.nav_logo {width: 13rem;}*/
+/*    li.nav-item a {font-size: 1rem;}*/
+/*    li.nav-item {margin-right: 14px;}*/
+/*    li.nav-item:nth-child(5) {padding-right: 5px;}*/
+/*    button.nav_signin_btn {font-size: 1rem; width: 7rem;}*/
+/*    button.nav_getstarted_btn {font-size: 1rem; width: 9rem;}*/
+/*}*/
 
 
 
