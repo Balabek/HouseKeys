@@ -84,4 +84,7 @@ $(document).ready(function(){
         $(this).find('h6.copy_folder_option_title').toggleClass('selected');
     });
 
+
+
+
 });
