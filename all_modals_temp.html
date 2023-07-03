@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HouseKeys - Unlocking Affordable Housing Opportunities in Local Communities (File Cabinet)</title>
+
+    <!-- Favicon(s) -->
+    <link rel="icon" type="image/png" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Misc meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+
+    <!-- Avenir -->
+    <link href="css/webfonts.css" rel="stylesheet">
+
+    <!-- Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bakbak One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+
+    <!-- Animate Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Slick Slider -->
+    <link href="slick-1.8.1/slick/slick.css" rel="stylesheet">
+    <link href="slick-1.8.1/slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <script src="https://kit.fontawesome.com/47dff7d085.js" crossorigin="anonymous"></script>
+
+    <!-- Select2 CSS -->
+    <link href="css/select2.css" rel="stylesheet">
+
+
+    <!-- Main CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/hk_mainstyle.css" rel="stylesheet">
+    <link href="css/hk_mq.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Copy Files (Optional Dropdown) Modal -->
+<div class="modal fade" id="copyFileModalOptionalSelect" tabindex="-1" aria-labelledby="copyFileModalOptionalSelectLabel" aria-hidden="true">
+    <div class="modal-dialog fc_modal_dialog">
+        <div class="modal-content fc_modal_content">
+            <div class="modal-header fc_modal_header copy">
+                <h1 class="modal-title fc_modal_ttl copy text-center" id="copyFileModalOptionalSelectLabel">Copy to...</h1>
+                <button type="button" class="btn-close fc_modal_close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fc_modal_body">
+                <div class="row">
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option selected">
+                            <img src="img/folderbox.png" class="folderbox selected" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title selected">My File Cabinet</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option">
+                            <img src="img/folderbox.png" class="folderbox" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title">My Org File Cabinet</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option">
+                            <img src="img/folderbox.png" class="folderbox" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title">My Program File Cabinet</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row modal_aux_row">
+                    <div class="fc_dropdown_form_holder">
+                        <form class="fc_dropdown_form">
+                            <label for="optionalFolder1" class="fc_selector_lbl">Optional</label>
+                            <select id="optionalFolder1">
+                                <option></option>
+                                <option>New Projects</option>
+                                <option>Cool Projects</option>
+                                <option>Outdated Projects</option>
+                                <option>Risky Projects</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer fc_modal_footer d-flex gap-lg-3">
+                <button type="button" class="btn modal_cancel_btn" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn modal_copy_btn">Copy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Copy Files (Two Optional Dropdowns + Breadcrumbs) Modal -->
+<div class="modal fade" id="copyFileModalOptionalSelectTwo" tabindex="-1" aria-labelledby="copyFileModalOptionalSelectTwoLabel" aria-hidden="true">
+    <div class="modal-dialog fc_modal_dialog">
+        <div class="modal-content fc_modal_content">
+            <div class="modal-header fc_modal_header copy">
+                <h1 class="modal-title fc_modal_ttl copy text-center" id="copyFileModalOptionalSelectTwoLabel">Copy to...</h1>
+                <button type="button" class="btn-close fc_modal_close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fc_modal_body">
+                <div class="row">
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option selected">
+                            <img src="img/folderbox.png" class="folderbox selected" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title selected">My File Cabinet</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option">
+                            <img src="img/folderbox.png" class="folderbox" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title">My Org File Cabinet</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option">
+                            <img src="img/folderbox.png" class="folderbox" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title">My Program File Cabinet</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row modal_aux_row">
+                    <div class="fc_breadcrumb_holder">
+                        <div class="fc_breadcrumb">
+                            <small>My File Cabinet &bkarow; New Projects</small>
+                        </div>
+                    </div>
+                    <div class="fc_dropdown_form_holder">
+                        <form class="fc_dropdown_form">
+                            <label for="optionalFolder2" class="fc_selector_lbl">Optional</label>
+                            <select id="optionalFolder2">
+                                <option></option>
+                                <option selected>New Projects</option>
+                                <option>Cool Projects</option>
+                                <option>Outdated Projects</option>
+                                <option>Risky Projects</option>
+                            </select>
+                        </form>
+                        <form class="fc_dropdown_form">
+                            <label for="optionalFolder3" class="fc_selector_lbl">Optional</label>
+                            <select id="optionalFolder3">
+                                <option></option>
+                                <option>Folder name</option>
+                                <option>One more name</option>
+                                <option>Another folder</option>
+                                <option>Cool folder</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer fc_modal_footer d-flex gap-lg-3">
+                <button type="button" class="btn modal_cancel_btn" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn modal_copy_btn">Copy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Move Files (Optional Dropdown) Modal -->
+<div class="modal fade" id="moveFileModalOptionalSelect" tabindex="-1" aria-labelledby="moveFileModalOptionalSelectLabel" aria-hidden="true">
+    <div class="modal-dialog fc_modal_dialog">
+        <div class="modal-content fc_modal_content">
+            <div class="modal-header fc_modal_header move">
+                <h1 class="modal-title fc_modal_ttl move text-center" id="moveFileModalOptionalSelectLabel">Move to...</h1>
+                <button type="button" class="btn-close fc_modal_close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fc_modal_body">
+                <div class="row">
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option selected">
+                            <img src="img/folderbox.png" class="folderbox selected" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title selected">My File Cabinet</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option">
+                            <img src="img/folderbox.png" class="folderbox" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title">My Org File Cabinet</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option">
+                            <img src="img/folderbox.png" class="folderbox" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title">My Program File Cabinet</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row modal_aux_row">
+                    <div class="fc_dropdown_form_holder">
+                        <form class="fc_dropdown_form">
+                            <label for="optionalFolder4" class="fc_selector_lbl">Optional</label>
+                            <select id="optionalFolder4">
+                                <option></option>
+                                <option>New Projects</option>
+                                <option>Cool Projects</option>
+                                <option>Outdated Projects</option>
+                                <option>Risky Projects</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer fc_modal_footer d-flex gap-lg-3">
+                <button type="button" class="btn modal_cancel_btn" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn modal_move_btn">Move</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Move Files (Two Optional Dropdowns + Breadcrumbs) Modal -->
+<div class="modal fade" id="moveFileModalOptionalSelectTwo" tabindex="-1" aria-labelledby="moveFileModalOptionalSelectTwoLabel" aria-hidden="true">
+    <div class="modal-dialog fc_modal_dialog">
+        <div class="modal-content fc_modal_content">
+            <div class="modal-header fc_modal_header move">
+                <h1 class="modal-title fc_modal_ttl move text-center" id="moveFileModalOptionalSelectTwoLabel">Move to...</h1>
+                <button type="button" class="btn-close fc_modal_close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fc_modal_body">
+                <div class="row">
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option selected">
+                            <img src="img/folderbox.png" class="folderbox selected" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title selected">My File Cabinet</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option">
+                            <img src="img/folderbox.png" class="folderbox" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title">My Org File Cabinet</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option">
+                            <img src="img/folderbox.png" class="folderbox" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title">My Program File Cabinet</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row modal_aux_row">
+                    <div class="fc_breadcrumb_holder">
+                        <div class="fc_breadcrumb">
+                            <small>My File Cabinet &bkarow; New Projects</small>
+                        </div>
+                    </div>
+                    <div class="fc_dropdown_form_holder">
+                        <form class="fc_dropdown_form">
+                            <label for="optionalFolder5" class="fc_selector_lbl">Optional</label>
+                            <select id="optionalFolder5">
+                                <option></option>
+                                <option selected>New Projects</option>
+                                <option>Cool Projects</option>
+                                <option>Outdated Projects</option>
+                                <option>Risky Projects</option>
+                            </select>
+                        </form>
+                        <form class="fc_dropdown_form">
+                            <label for="optionalFolder6" class="fc_selector_lbl">Optional</label>
+                            <select id="optionalFolder6">
+                                <option></option>
+                                <option>Something</option>
+                                <option>Another name</option>
+                                <option>Title here</option>
+                                <option>Cool title here</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer fc_modal_footer d-flex gap-lg-3">
+                <button type="button" class="btn modal_cancel_btn" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn modal_move_btn">Move</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Move Files (Required Dropdown) Modal -->
+<div class="modal fade" id="moveFileModalReqSelect" tabindex="-1" aria-labelledby="moveFileModalReqSelectLabel" aria-hidden="true">
+    <div class="modal-dialog fc_modal_dialog">
+        <div class="modal-content fc_modal_content">
+            <div class="modal-header fc_modal_header move">
+                <h1 class="modal-title fc_modal_ttl move text-center" id="moveFileModalReqSelectLabel">Move to...</h1>
+                <button type="button" class="btn-close fc_modal_close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fc_modal_body">
+                <div class="row">
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option">
+                            <img src="img/folderbox.png" class="folderbox" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title">My File Cabinet</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option">
+                            <img src="img/folderbox.png" class="folderbox" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title">My Org File Cabinet</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option selected">
+                            <img src="img/folderbox.png" class="folderbox selected" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title selected">My Program File Cabinet</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row modal_aux_row">
+                    <div class="fc_dropdown_form_holder">
+                        <form class="fc_dropdown_form">
+                            <label for="optionalFolder7" class="fc_selector_lbl">Required <span>&ast;</span></label>
+                            <select id="optionalFolder7">
+                                <option></option>
+                                <option>Program #2119</option>
+                                <option>Program #6006</option>
+                                <option>Program #2183</option>
+                                <option>Program #2821</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer fc_modal_footer d-flex gap-lg-3">
+                <button type="button" class="btn modal_cancel_btn" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn modal_move_btn">Move</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Move Files (Two Required Dropdowns + Breadcrumbs) Modal -->
+<div class="modal fade" id="moveFileModalReqSelectTwo" tabindex="-1" aria-labelledby="moveFileModalReqSelectTwoLabel" aria-hidden="true">
+    <div class="modal-dialog fc_modal_dialog">
+        <div class="modal-content fc_modal_content">
+            <div class="modal-header fc_modal_header move">
+                <h1 class="modal-title fc_modal_ttl move text-center" id="moveFileModalReqSelectTwoLabel">Move to...</h1>
+                <button type="button" class="btn-close fc_modal_close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fc_modal_body">
+                <div class="row">
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option">
+                            <img src="img/folderbox.png" class="folderbox" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title">My File Cabinet</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option">
+                            <img src="img/folderbox.png" class="folderbox" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title">My Org File Cabinet</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option selected">
+                            <img src="img/folderbox.png" class="folderbox selected" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title selected">My Program File Cabinet</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row modal_aux_row">
+                    <div class="fc_breadcrumb_holder">
+                        <div class="fc_breadcrumb">
+                            <small>My Program File Cabinet &bkarow; Program #6006</small>
+                        </div>
+                    </div>
+                    <div class="fc_dropdown_form_holder">
+                        <form class="fc_dropdown_form">
+                            <label for="optionalFolder8" class="fc_selector_lbl">Required <span>&ast;</span></label>
+                            <select id="optionalFolder8">
+                                <option></option>
+                                <option>Program #2119</option>
+                                <option selected>Program #6006</option>
+                                <option>Program #2183</option>
+                                <option>Program #2821</option>
+                            </select>
+                        </form>
+                        <form class="fc_dropdown_form">
+                            <label for="optionalFolder9" class="fc_selector_lbl">Required <span>&ast;</span></label>
+                            <select id="optionalFolder9">
+                                <option></option>
+                                <option>Program #2119</option>
+                                <option>Program #6006</option>
+                                <option>Program #2183</option>
+                                <option>Program #2821</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer fc_modal_footer d-flex gap-lg-3">
+                <button type="button" class="btn modal_cancel_btn" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn modal_move_btn">Move</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Move Files (Three Required Dropdowns + Breadcrumbs) Modal -->
+<div class="modal fade" id="moveFileModalReqSelectThree" tabindex="-1" aria-labelledby="moveFileModalReqSelectThreeLabel" aria-hidden="true">
+    <div class="modal-dialog fc_modal_dialog">
+        <div class="modal-content fc_modal_content">
+            <div class="modal-header fc_modal_header move">
+                <h1 class="modal-title fc_modal_ttl move text-center" id="moveFileModalReqSelectThreeLabel">Move to...</h1>
+                <button type="button" class="btn-close fc_modal_close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fc_modal_body">
+                <div class="row">
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option">
+                            <img src="img/folderbox.png" class="folderbox" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title">My File Cabinet</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option">
+                            <img src="img/folderbox.png" class="folderbox" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title">My Org File Cabinet</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 copy_folder_option_holder">
+                        <div class="copy_folder_option selected">
+                            <img src="img/folderbox.png" class="folderbox selected" alt="Icon of stacked folders">
+                            <h6 class="copy_folder_option_title selected">My Program File Cabinet</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row modal_aux_row">
+                    <div class="fc_breadcrumb_holder">
+                        <div class="fc_breadcrumb">
+                            <small>My Program File Cabinet &bkarow; Program #6006 &bkarow; Program#2119 &bkarow; ABC Program</small>
+                        </div>
+                    </div>
+                    <div class="fc_dropdown_form_holder">
+                        <form class="fc_dropdown_form">
+                            <label for="optionalFolder10" class="fc_selector_lbl">Required <span>&ast;</span></label>
+                            <select id="optionalFolder10">
+                                <option></option>
+                                <option>Program #2119</option>
+                                <option selected>Program #6006</option>
+                                <option>Program #2183</option>
+                                <option>Program #2821</option>
+                            </select>
+                        </form>
+                        <form class="fc_dropdown_form">
+                            <label for="optionalFolder11" class="fc_selector_lbl">Required <span>&ast;</span></label>
+                            <select id="optionalFolder11">
+                                <option></option>
+                                <option selected>Program #2119</option>
+                                <option>Program #6006</option>
+                                <option>Program #2183</option>
+                                <option>Program #2821</option>
+                            </select>
+                        </form>
+                        <form class="fc_dropdown_form">
+                            <label for="optionalFolder12" class="fc_selector_lbl">Required <span>&ast;</span></label>
+                            <select id="optionalFolder12">
+                                <option></option>
+                                <option selected>ABC Program</option>
+                                <option>HDD Program</option>
+                                <option>RTD Program</option>
+                                <option>NMB Program</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer fc_modal_footer d-flex gap-lg-3">
+                <button type="button" class="btn modal_cancel_btn" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn modal_move_btn">Move</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="home" class="outermost_wrapper">
+
+    <div class="fc_main_area">
+        <div class="container">
+            <div class="row">
+                <button class="btn btn-dark mb-3" data-bs-toggle="modal" data-bs-target="#copyFileModalOptionalSelect">Copy (Optional Dropdown)</button>
+                <button class="btn btn-dark mb-3" data-bs-toggle="modal" data-bs-target="#copyFileModalOptionalSelectTwo">Copy (Two Optional Dropdowns + Breadcrumbs)</button>
+                <button class="btn btn-dark mb-3" data-bs-toggle="modal" data-bs-target="#moveFileModalOptionalSelect">Move (Optional Dropdown)</button>
+                <button class="btn btn-dark mb-3" data-bs-toggle="modal" data-bs-target="#moveFileModalOptionalSelectTwo">Move (Two Optional Dropdowns + Breadcrumbs)</button>
+                <button class="btn btn-dark mb-3" data-bs-toggle="modal" data-bs-target="#moveFileModalReqSelect">Move (Required Dropdown)</button>
+                <button class="btn btn-dark mb-3" data-bs-toggle="modal" data-bs-target="#moveFileModalReqSelectTwo">Move (Two Required Dropdowns + Breadcrumbs)</button>
+                <button class="btn btn-dark mb-3" data-bs-toggle="modal" data-bs-target="#moveFileModalReqSelectThree">Move (Three Required Dropdowns + Breadcrumbs)</button>
+            </div>
+        </div>
+    </div> <!-- Temporary Section -->
+
+
+</div> <!-- Outermost Wrapper END-->
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="   crossorigin="anonymous"></script>
+
+<script>
+    $('.copy_folder_option').click(function() {
+        $('.copy_folder_option').not(this).removeClass('selected');
+        $('.copy_folder_option img.folderbox').not($(this).find('img.folderbox')).removeClass('selected');
+        $('h6.copy_folder_option_title').not($(this).find('h6')).removeClass('selected');
+
+        $(this).toggleClass('selected');
+        $(this).find('img.folderbox').toggleClass('selected');
+        $(this).find('h6.copy_folder_option_title').toggleClass('selected');
+    });
+</script>
+
+<!-- JS -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/hk_scripts.js"></script>
+<script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
+<script type="text/javascript" src="js/select2.js"></script>
+<script type="text/javascript">
+    $('#optionalFolder1').select2({
+        width: '100%',
+        placeholder: "Select a folder",
+        minimumResultsForSearch: -1,
+        dropdownParent: $('#copyFileModalOptionalSelect')
+    });
+    $('#optionalFolder2').select2({
+        width: '100%',
+        placeholder: "Select a folder",
+        minimumResultsForSearch: -1,
+        dropdownParent: $('#copyFileModalOptionalSelectTwo')
+    });
+    $('#optionalFolder3').select2({
+        width: '100%',
+        placeholder: "Select a subfolder",
+        minimumResultsForSearch: -1,
+        dropdownParent: $('#copyFileModalOptionalSelectTwo')
+    });
+    $('#optionalFolder4').select2({
+        width: '100%',
+        placeholder: "Select a folder",
+        minimumResultsForSearch: -1,
+        dropdownParent: $('#moveFileModalOptionalSelect')
+    });
+    $('#optionalFolder5').select2({
+        width: '100%',
+        placeholder: "Select a subfolder",
+        minimumResultsForSearch: -1,
+        dropdownParent: $('#moveFileModalOptionalSelect')
+    });
+    $('#optionalFolder6').select2({
+        width: '100%',
+        placeholder: "Select a subfolder",
+        minimumResultsForSearch: -1,
+        dropdownParent: $('#moveFileModalOptionalSelectTwo')
+    });
+    $('#optionalFolder7').select2({
+        width: '100%',
+        placeholder: "Select a program",
+        minimumResultsForSearch: -1,
+        dropdownParent: $('#moveFileModalReqSelect')
+    });
+    $('#optionalFolder8').select2({
+        width: '100%',
+        placeholder: "Select a program",
+        minimumResultsForSearch: -1,
+        dropdownParent: $('#moveFileModalReqSelectTwo')
+    });
+    $('#optionalFolder9').select2({
+        width: '100%',
+        placeholder: "Select one",
+        minimumResultsForSearch: -1,
+        dropdownParent: $('#moveFileModalReqSelectTwo')
+    });
+    $('#optionalFolder10').select2({
+        width: '100%',
+        placeholder: "Select a program",
+        minimumResultsForSearch: -1,
+        dropdownParent: $('#moveFileModalReqSelectThree')
+    });
+    $('#optionalFolder11').select2({
+        width: '100%',
+        placeholder: "Select one",
+        minimumResultsForSearch: -1,
+        dropdownParent: $('#moveFileModalReqSelectThree')
+    });
+    $('#optionalFolder12').select2({
+        width: '100%',
+        placeholder: "Projects",
+        minimumResultsForSearch: -1,
+        dropdownParent: $('#moveFileModalReqSelectThree')
+    });
+
+</script>
+
+
+</body>
+
+</html>

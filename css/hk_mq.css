@@ -337,13 +337,115 @@
 
 
 
+/* ¬¬¬¬¬¬¬¬¬¬¬¬ FILE CABINET (INNER PAGE) ¬¬¬¬¬¬¬¬¬¬¬ */
+/* ==================== */
+/* FC Main Area Tabs + Uploader */
+/* ==================== */
+@media screen and (max-width: 1399px){
+    .fc_navtabs_holder {position: relative; top: 3px;}
+}
+
+@media screen and (max-width: 767px){
+    .fc_tab_content {border-top: none;}
+    .fc_nav_underline {display: flow-root; text-align: center;}
+    li.fc_nav_item {margin-bottom: 20px;}
+    li.fc_nav_item:last-child {margin-bottom: 0;}
+}
+
+/* ==================== */
+/* Frequent Folders */
+/* ==================== */
+@media screen and (max-width: 1199px){
+    .freq_folder_box_holder {margin-bottom: 18px;}
+    .fc_action_buttons_holder {top: 8px;}
+    h2.fc_subtitle.floated {float: none;}
+    .viewall_link_holder {padding-top: 16px;}
+}
+
+@media screen and (max-width: 575px){
+    .frequent_folders_area {padding-left: 12px;}
+}
+
+
+/* ==================== */
+/* All Files */
+/* ==================== */
+@media screen and (max-width: 1199px){
+    .table-responsive {overflow-x: auto;}
+}
+
+@media screen and (max-width: 992px){
+    button.fc_action_btn_filter_search {float: none; margin-bottom: 12px; width: 100%;}
+    button.fc_action_btn_download {float: none; margin-bottom: 12px; width: 100%;}
+    button.fc_action_btn_delete {float: none; margin-bottom: 12px; width: 100%;}
+    button.fc_action_btn_move {float: none; margin-bottom: 12px; width: 100%;}
+    button.fc_action_btn_copy {float: none; margin-bottom: 12px; width: 100%;}
+}
 
 
 
+/* ==================== */
+/* Activity (Accordion) */
+/* ==================== */
+@media screen and (max-width: 992px){
+    .fc_activity_accordion {width: 90%;}
+}
+
+@media screen and (max-width: 767px){
+    .file_info {margin-bottom: 12px;}
+    .activity_status_icon {margin-bottom: 16px;}
+    .tag_input_holder {margin-bottom: 22px;}
+}
+
+@media screen and (max-width: 650px){
+    .fc_activity_button {height: 120px;}
+    .accordion-button:not(.collapsed)::after {top: -40px;}
+    .accordion-button.collapsed::after {top: -32px;}
+}
 
 
 
+/* ==================== */
+/* Modals */
+/* ==================== */
+@media screen and (max-width: 1199px){
+    .modal-dialog.fc_modal_dialog {max-width: 65%;}
+}
 
+@media screen and (max-width: 992px){
+    .copy_folder_option {margin-bottom: 12px;}
+}
+
+@media screen and (max-width: 767px){
+    .modal-dialog.fc_modal_dialog {max-width: 85%;}
+}
+
+@media screen and (max-width: 575px){
+    .modal-dialog.fc_modal_dialog {max-width: 100%;}
+}
+
+
+
+/* ==================== */
+/* Search Filter */
+/* ==================== */
+@media screen and (max-width: 992px){
+    .search_condition_frame {
+        display: inline-block;
+        padding-top: 28px;
+        padding-left: 14px;
+    }
+    button.remove_condition {top: 8px;}
+}
+
+@media screen and (max-width: 767px){
+    .add_condition_holder {padding-top: 12px;}
+    .condition_buttons_holder {float: none; top: 0; margin-top: 26px;}
+}
+
+@media screen and (max-width: 640px){
+    .filter_search_area {padding-left: 12px;}
+}
 
 
 

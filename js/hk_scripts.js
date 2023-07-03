@@ -61,4 +61,27 @@ $(document).ready(function(){
     });
 
 
+
+    // Selecting all checkboxes toggle
+    const selectAllCheckbox = document.getElementById('selectAll');
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+    selectAllCheckbox.addEventListener('change', function() {
+        checkboxes.forEach(function(checkbox) {
+            checkbox.checked = selectAllCheckbox.checked;
+        });
+    });
+
+
+    // Selecting one folder at a time
+    $('.copy_folder_option').click(function() {
+        $('.copy_folder_option').not(this).removeClass('selected');
+        $('.copy_folder_option img.folderbox').not($(this).find('img.folderbox')).removeClass('selected');
+        $('h6.copy_folder_option_title').not($(this).find('h6')).removeClass('selected');
+
+        $(this).toggleClass('selected');
+        $(this).find('img.folderbox').toggleClass('selected');
+        $(this).find('h6.copy_folder_option_title').toggleClass('selected');
+    });
+
 });
