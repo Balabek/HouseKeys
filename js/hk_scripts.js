@@ -85,6 +85,7 @@ $(document).ready(function(){
     });
 
 
+    $.fn.modal.Constructor.prototype._enforceFocus = function() {};
 
 
 });
